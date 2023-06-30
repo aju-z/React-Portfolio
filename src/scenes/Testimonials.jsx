@@ -56,7 +56,7 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl mb-20">impressed and delighted.</p>
+          <p className="text-center text-xl mb-20">Impressed and delighted.</p>
         </motion.div>
 
         <motion.div

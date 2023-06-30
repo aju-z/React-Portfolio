@@ -5,6 +5,7 @@ import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
 import Testimonials from "./scenes/Testimonials";
 import Contact from "./scenes/Contact";
+import Footer from "./scenes/Footer";
 import { useState, useEffect } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import LineGradient from "./components/LineGradient";
@@ -60,6 +61,7 @@ function App() {
           <Contact />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
