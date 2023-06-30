@@ -3,6 +3,9 @@ import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import contactImg from "../assets/contact-image.jpeg";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Contact = () => {
   const {
     register,
@@ -14,6 +17,10 @@ const Contact = () => {
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
+      toast.error("Please fill in all required fields correctly!");
+    } else {
+      // Submit the form here
+      toast.success("Form submitted successfully!");
     }
   };
 
@@ -72,7 +79,7 @@ const Contact = () => {
           }}
         >
           <form
-            target="_blank"
+            // target="_blank"
             onSubmit={onSubmit}
             action="https://formsubmit.co/44fe643183d448c683795c7ba65b8425"
             method="POST"
@@ -138,6 +145,7 @@ const Contact = () => {
           </form>
         </motion.div>
       </div>
+      <ToastContainer />
     </section>
   );
 };
