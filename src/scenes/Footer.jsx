@@ -6,10 +6,10 @@ const Footer = () => {
       <div className="w-10/12 mx-auto">
         <SocialMediaIcons />
         <div className="md:flex justify-center md:justify-between text-center">
-          <p className="font-playfair font-semibold text-xl text-yellow">
+          <p className="font-playfair font-semibold text-xl text-white">
             AJEES
           </p>
-          <p className="font-opensans text-md text-yellow">
+          <p className="font-opensans text-md text-white">
             ©2023 All Rights Reserved.
           </p>
         </div>

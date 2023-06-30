@@ -68,7 +68,10 @@ const Projects = () => {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-            <span className="text-red">PRO</span>JECTS
+            <span className="text-transparent bg-clip-text bg-gradient-rainbow">
+              PRO
+            </span>
+            JECTS
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />

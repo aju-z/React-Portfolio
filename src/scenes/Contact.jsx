@@ -33,7 +33,10 @@ const Contact = () => {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-            <span className="text-yellow">CONTACT ME</span> FOR DETAILS
+            <span className="text-transparent bg-clip-text bg-gradient-rainbow">
+              CONTACT ME
+            </span>{" "}
+            FOR DETAILS
           </p>
           <div className="flex md:justify-end my-5">
             <LineGradient width="w-1/2" />
@@ -75,7 +78,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 rounded-md focus:border-white"
+              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 focus:border-white"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -91,7 +94,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5 rounded-md focus:border-white"
+              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5 focus:border-white"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -107,7 +110,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5 resize-none rounded-md focus:border-white"
+              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5 resize-none focus:border-white"
               type="text"
               placeholder="MESSAGE"
               rows="4"
@@ -128,7 +131,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500 rounded-md"
+              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
             >
               SUBMIT YOUR MESSAGE
             </button>
