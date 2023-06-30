@@ -11,6 +11,7 @@ const Contact = () => {
     register,
     trigger,
     formState: { errors },
+    reset,
   } = useForm();
 
   const onSubmit = async (e) => {
@@ -21,6 +22,7 @@ const Contact = () => {
     } else {
       // Submit the form here
       toast.success("Form submitted successfully!");
+      reset();
     }
   };
 
@@ -92,6 +94,7 @@ const Contact = () => {
                 required: true,
                 maxLength: 25,
               })}
+              defaultValue=""
             />
             {errors.name && (
               <p className="text-red mt-1">
@@ -108,6 +111,7 @@ const Contact = () => {
                 required: true,
                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9._]+\.[A-Z]{2,}$/i,
               })}
+              defaultValue=""
             />
             {errors.email && (
               <p className="text-red mt-1">
@@ -126,6 +130,7 @@ const Contact = () => {
                 required: true,
                 maxLength: 200,
               })}
+              defaultValue=""
             />
             {errors.message && (
               <p className="text-red mt-1">
