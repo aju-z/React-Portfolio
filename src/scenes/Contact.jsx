@@ -28,7 +28,6 @@ const Contact = () => {
         setIsLoading(false);
         toast.success("Form submitted successfully!");
         reset();
-        window.location.reload();
       }, 4000);
     }
   };
